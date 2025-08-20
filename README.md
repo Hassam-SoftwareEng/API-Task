@@ -1,4 +1,4 @@
-# Random Users Viewer — Modern UI
+# Random Users Viewer 
 
 A JavaScript project that demonstrates **async/await**, **event loop**, **Fetch API**, and **Axios** by fetching live data from the [Random User API](https://randomuser.me/).  
 Users are displayed in a modern card-based UI with filtering, skeleton loading, and error handling.
