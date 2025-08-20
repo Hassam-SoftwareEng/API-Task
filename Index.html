@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./assets/style.css">
+
+  <title>Random Users Viewer </title>
+
+</head>
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="title">
+        <div class="logo" aria-hidden="true"></div>
+        <div>
+          <h1>Random Users Viewer</h1>
+        </div>
+      </div>
+      <div class="actions">
+        <button class="btn primary" id="btnFetch">Fetch User (Fetch)</button>
+        <button class="btn" id="btnAxios">Fetch User (Axios)</button>
+      </div>
+    </header>
+
+    <section class="panel">
+      <div class="controls">
+        <div class="search">
+          <svg class="icon" viewBox="0 0 24 24" fill="none">
+            <path d="M21 21l-4.3-4.3m1.8-5.2a7 7 0 11-14 0 7 7 0 0114 0z"
+              stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+          <input id="search" type="text" placeholder="Filter by country or name..." />
+        </div>
+        <div class="actions">
+          <button class="btn" id="btnThree">+3 Users</button>
+          <button class="btn" id="btnClear">Clear</button>
+        </div>
+      </div>
+
+      <div id="grid" class="grid"></div>
+    </section>
+  </div>
+
+  <div id="toast" class="toast" role="alert" aria-live="assertive"></div>
+
+  <!-- Axios CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+  <script src="./assets/script.js"></script>
+
+
+  
+</body>
+</html>
